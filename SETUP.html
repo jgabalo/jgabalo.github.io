@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Setup Helper</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { padding: 40px; background: #f8f9fa; }
+    .card { margin-bottom: 20px; }
+    .step-number { 
+      background: #0d6efd; 
+      color: white; 
+      width: 40px; 
+      height: 40px; 
+      border-radius: 50%; 
+      display: flex; 
+      align-items: center; 
+      justify-content: center; 
+      font-weight: bold; 
+      margin-right: 15px;
+    }
+    .checklist-item { padding: 10px; border-left: 3px solid #0d6efd; margin: 10px 0; background: white; }
+    code { background: #e9ecef; padding: 2px 6px; border-radius: 3px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="text-center mb-5">
+      <h1 class="display-4">?? Portfolio Setup Helper</h1>
+      <p class="lead">Follow these steps to customize your portfolio website</p>
+    </div>
+
+    <!-- Step 1 -->
+    <div class="card">
+      <div class="card-body">
+        <div class="d-flex align-items-start">
+          <div class="step-number">1</div>
+          <div>
+            <h3>Replace Personal Information</h3>
+            <p>Open <code>index.html</code> and find & replace:</p>
+            <div class="checklist-item">
+              <strong>Find:</strong> "Your Name"<br>
+              <strong>Replace with:</strong> Your actual name<br>
+              <small class="text-muted">Appears in: sidebar, navbar, hero section, footer</small>
+            </div>
+            <div class="checklist-item">
+              <strong>Find:</strong> "Developer | Designer"<br>
+              <strong>Replace with:</strong> Your professional title<br>
+              <small class="text-muted">Example: "Full Stack Developer" or "UI/UX Designer"</small>
+            </div>
+            <div class="checklist-item">
+              <strong>Find:</strong> "your.email@example.com"<br>
+              <strong>Replace with:</strong> Your email address<br>
+              <small class="text-muted">Appears in: sidebar, about section, contact section</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="card">
+      <div class="card-body">
+        <div class="d-flex align-items-start">
+          <div class="step-number">2</div>
+          <div>
+            <h3>Update Social Links</h3>
+            <p>In <code>index.html</code>, update these URLs:</p>
+            <div class="checklist-item">
+              <strong>GitHub:</strong> Change <code>github.com/yourusername</code><br>
+              <small class="text-muted">Line ~36: href="https://github.com/<span class="text-danger">yourusername</span>"</small>
+            </div>
+            <div class="checklist-item">
+              <strong>LinkedIn:</strong> Change <code>linkedin.com/in/yourusername</code><br>
+              <small class="text-muted">Line ~39: href="https://linkedin.com/in/<span class="text-danger">yourusername</span>"</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="card">
+      <div class="card-body">
+        <div class="d-flex align-items-start">
+          <div class="step-number">3</div>
+          <div>
+            <h3>Add Your Images</h3>
+            <p>Replace placeholder images in the <code>assets/</code> folder:</p>
+            <div class="checklist-item">
+              <strong>profile.jpg</strong> - Your professional headshot (300x300px recommended)
+            </div>
+            <div class="checklist-item">
+              <strong>project1.jpg</strong> - First project screenshot (800x600px)
+            </div>
+            <div class="checklist-item">
+              <strong>project2.jpg</strong> - Second project screenshot (800x600px)
+            </div>
+            <div class="checklist-item">
+              <strong>project3.jpg</strong> - Third project screenshot (800x600px)
+            </div>
+            <div class="alert alert-info mt-3">
+              <strong>?? Tip:</strong> Use tools like TinyPNG to compress images for faster loading
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Step 4 -->
+    <div class="card">
+      <div class="card-body">
+        <div class="d-flex align-items-start">
+          <div class="step-number">4</div>
+          <div>
+            <h3>Customize About Section</h3>
+            <p>Update your personal information (lines 89-115):</p>
+            <div class="checklist-item">Write your personal story and introduction</div>
+            <div class="checklist-item">Update age, location, education, email</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Step 5 -->
+    <div class="card">
+      <div class="card-body">
+        <div class="d-flex align-items-start">
+          <div class="step-number">5</div>
+          <div>
+            <h3>Update Skills</h3>
+            <p>Modify your skills and proficiency levels (lines 130-230):</p>
+            <div class="checklist-item">
+              Change skill names to match your expertise
+            </div>
+            <div class="checklist-item">
+              Adjust percentages: <code>style="width: 85%"</code>
+            </div>
+            <div class="checklist-item">
+              Add or remove skill categories
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Step 6 -->
+    <div class="card">
+      <div class="card-body">
+        <div class="d-flex align-items-start">
+          <div class="step-number">6</div>
+          <div>
+            <h3>Add Your Projects</h3>
+            <p>Replace placeholder projects (lines 240-310):</p>
+            <div class="checklist-item">Update project titles and descriptions</div>
+            <div class="checklist-item">Change technology badges</div>
+            <div class="checklist-item">Add real GitHub and demo links</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Step 7 -->
+    <div class="card">
+      <div class="card-body">
+        <div class="d-flex align-items-start">
+          <div class="step-number">7</div>
+          <div>
+            <h3>Update Experience</h3>
+            <p>Add your work history (lines 320-420):</p>
+            <div class="checklist-item">Update job titles, companies, dates</div>
+            <div class="checklist-item">List your responsibilities and achievements</div>
+            <div class="checklist-item">Add or remove experience entries</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Step 8 -->
+    <div class="card bg-success text-white">
+      <div class="card-body">
+        <div class="d-flex align-items-start">
+          <div class="step-number bg-white text-success">8</div>
+          <div>
+            <h3>Deploy to GitHub Pages</h3>
+            <p>Push your changes and enable GitHub Pages:</p>
+            <pre class="bg-white text-dark p-3 rounded"><code>git add .
+git commit -m "Customize portfolio"
+git push origin main</code></pre>
+            <p class="mb-0">Then go to Settings ? Pages ? Select 'main' branch ? Save</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="card bg-light">
+      <div class="card-body">
+        <h4 class="mb-3">?? Documentation</h4>
+        <div class="row">
+          <div class="col-md-4">
+            <h6>Quick Start</h6>
+            <p><a href="QUICKSTART.md">QUICKSTART.md</a></p>
+          </div>
+          <div class="col-md-4">
+            <h6>Full Guide</h6>
+            <p><a href="CUSTOMIZATION.md">CUSTOMIZATION.md</a></p>
+          </div>
+          <div class="col-md-4">
+            <h6>Your Portfolio</h6>
+            <p><a href="index.html" class="btn btn-primary">Open Portfolio ?</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-4">
+      <p class="text-muted">Need help? Check the documentation files or the comments in index.html</p>
+    </div>
+  </div>
+</body>
+</html>
